@@ -14,7 +14,16 @@ namespace Exercicio1
         public DateTime DataNascimento { get; set; }
         public bool MenorIdade { get; set; }
 
-        public void Salvar()
+        public FichaInscricao (int id, string nome, DateTime dataNascimento, bool menorIdade)
+        {
+            Id = id;
+            Nome = nome;
+            DataNascimento = dataNascimento;
+            MenorIdade = menorIdade;
+
+        }
+
+        public void Imprimir()
         {
             Console.WriteLine($"Código: {Id}");
             Console.WriteLine("Nome: " + Nome);
